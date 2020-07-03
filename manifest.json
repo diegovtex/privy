@@ -1,0 +1,32 @@
+{
+  "name": "privy",
+  "vendor": "VTEX",
+  "version": "1.0.1",
+  "title": "Privy",
+  "description": "",
+  "billingOptions": {
+    "termsURL": "",
+    "support": {
+      "url": "diego.cione@vtex.com.br"
+    },
+    "free": true
+  },
+  "builders": {
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Privy Page View",
+    "type": "object",
+    "properties": {
+      "idprivy": {
+        "title": "idprivy",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

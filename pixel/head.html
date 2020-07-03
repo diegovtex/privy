@@ -1,0 +1,12 @@
+<script>
+  (function() {
+    var idprivy = "{{settings.idprivy}}";
+    if (!idprivy) {
+      console.error('Warning: Missing required field for Privy. Please configure it in the apps admin.');
+      return
+    }
+    window.adraker = { idprivy: idprivy };
+    window._d_site = window._d_site || '{{settings.idprivy}}'
+  })()
+</script>
+<script src='https://widget.privy.com/assets/widget.js'></script>
